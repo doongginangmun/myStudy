@@ -29,7 +29,7 @@ public class GetBoardListController implements Controller {
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("boardList", list);
 		System.out.println("mav :" +mav);
-		mav.setViewName("redirect:getBoardList.jsp"); //뷰리졸버 적용하면 prfix sufix가 붙는다
+		mav.setViewName("getBoardList.do"); //뷰리졸버 적용하면 prfix sufix가 붙는다
 		
 		return mav;
 	}
