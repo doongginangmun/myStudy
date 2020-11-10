@@ -37,9 +37,7 @@ public class LoginController implements Controller {
 			System.out.println("> 로그인 실패~~~");
 			mav.setViewName("redirect:login.jsp"); //redirect: - 뷰리졸버 적용안됨
 			//에러.WEB-INF/board/(prefix) + login.jsp  +".jsp"(surfix) :뷰리졸버 적용되는경우 
-			
 		}
-		
 		return mav;
 	}
 

@@ -28,7 +28,8 @@ public class GetBoardListController implements Controller {
 		//3. ModelAndView 형식으로 데이터 저장 및 뷰 이름 저장(화면 이동)
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("boardList", list);
-		mav.setViewName("getBoardList"); //뷰리졸버 적용하면 prfix sufix가 붙는다
+		System.out.println("mav :" +mav);
+		mav.setViewName("redirect:getBoardList.jsp"); //뷰리졸버 적용하면 prfix sufix가 붙는다
 		
 		return mav;
 	}
