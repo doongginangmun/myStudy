@@ -18,6 +18,7 @@ public class BoardServiceClient {
 
 	//2-1 입력
 	BoardVO vo = new BoardVO();
+	
 	vo.setTitle("테스트");
 	vo.setWriter("홍길동");
 	vo.setContent("테스트-ㄴ용");

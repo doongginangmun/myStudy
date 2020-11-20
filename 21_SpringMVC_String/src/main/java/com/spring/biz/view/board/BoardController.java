@@ -11,7 +11,7 @@ import com.spring.biz.board.BoardVO;
 import com.spring.biz.board.impl.BoardDAO;
 @Controller
 public class BoardController {
-
+		
 		@RequestMapping("/getBoard.do")
 		public String getBoard(BoardVO vo,BoardDAO boardDAO, Model model) {
 			System.out.println(">>> 게시글 상세보기");
